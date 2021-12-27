@@ -142,7 +142,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = "Nikolai Mikhailov";
+				ORGANIZATIONNAME = "Mezhuiev & Minaiev";
 				TargetAttributes = {
 					95305C9523F2EE1E0055B1D5 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -342,7 +342,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = icodelessons.collectionviewlesson;
+				PRODUCT_BUNDLE_IDENTIFIER = maxomka.raccoonCity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,7 +359,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = icodelessons.collectionviewlesson;
+				PRODUCT_BUNDLE_IDENTIFIER = maxomka.raccoonCity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
