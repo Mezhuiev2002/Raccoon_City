@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GmH-R3-B28" customClass="FullProductCell" customModule="CollectionViewLesson" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="308" height="271"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="308" height="271"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="jjo-5y-qld">
+                        <rect key="frame" x="0.0" y="0.0" width="308" height="205.5"/>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.61568627450000002" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9D-kU-SId">
+                        <rect key="frame" x="8" y="213.5" width="292" height="22"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Evo-9f-Wcd">
+                        <rect key="frame" x="8" y="243.5" width="292" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="jjo-5y-qld" firstAttribute="top" secondItem="GmH-R3-B28" secondAttribute="top" id="3dg-e5-hxB"/>
+                <constraint firstAttribute="trailing" secondItem="Evo-9f-Wcd" secondAttribute="trailing" constant="8" id="Chz-ck-YzM"/>
+                <constraint firstItem="o9D-kU-SId" firstAttribute="top" secondItem="jjo-5y-qld" secondAttribute="bottom" constant="8" id="UYy-ML-9nh"/>
+                <constraint firstItem="Evo-9f-Wcd" firstAttribute="leading" secondItem="GmH-R3-B28" secondAttribute="leading" constant="8" id="cZ4-31-pGj"/>
+                <constraint firstAttribute="trailing" secondItem="o9D-kU-SId" secondAttribute="trailing" constant="8" id="phf-if-IHh"/>
+                <constraint firstItem="o9D-kU-SId" firstAttribute="leading" secondItem="GmH-R3-B28" secondAttribute="leading" constant="8" id="qQM-8i-2Xu"/>
+                <constraint firstAttribute="bottom" secondItem="Evo-9f-Wcd" secondAttribute="bottom" constant="8" id="sur-gi-zf3"/>
+                <constraint firstAttribute="trailing" secondItem="jjo-5y-qld" secondAttribute="trailing" id="tXr-e0-YRE"/>
+                <constraint firstItem="Evo-9f-Wcd" firstAttribute="top" secondItem="o9D-kU-SId" secondAttribute="bottom" constant="8" id="tcB-YF-uNf"/>
+                <constraint firstItem="jjo-5y-qld" firstAttribute="leading" secondItem="GmH-R3-B28" secondAttribute="leading" id="v7d-DM-9Px"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="nYq-LP-nQR"/>
+            <size key="customSize" width="308" height="271"/>
+            <connections>
+                <outlet property="productImage" destination="jjo-5y-qld" id="F6Z-ON-zib"/>
+                <outlet property="productName" destination="o9D-kU-SId" id="Kuy-oJ-KtZ"/>
+                <outlet property="productPrice" destination="Evo-9f-Wcd" id="ioM-Gs-dCb"/>
+            </connections>
+            <point key="canvasLocation" x="278.26086956521743" y="297.65625"/>
+        </collectionViewCell>
+    </objects>
+</document>
