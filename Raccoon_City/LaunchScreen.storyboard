@@ -17,21 +17,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="picture" translatesAutoresizingMaskIntoConstraints="NO" id="mTi-jW-adf">
-                                <rect key="frame" x="0.0" y="257" width="414" height="461"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Raccoon City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H54-PE-LAP">
                                 <rect key="frame" x="109" y="217" width="196" height="40"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="picture" translatesAutoresizingMaskIntoConstraints="NO" id="mTi-jW-adf">
+                                <rect key="frame" x="0.0" y="338" width="414" height="350"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="mTi-jW-adf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2hr-0n-3JF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mTi-jW-adf" secondAttribute="bottom" constant="144" id="H1y-nD-DFK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mTi-jW-adf" secondAttribute="bottom" constant="174" id="H1y-nD-DFK"/>
                             <constraint firstItem="H54-PE-LAP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="173" id="cxh-zF-1Qe"/>
                             <constraint firstItem="mTi-jW-adf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pAJ-5m-5dj"/>
                             <constraint firstItem="H54-PE-LAP" firstAttribute="leading" secondItem="mTi-jW-adf" secondAttribute="trailing" constant="-305" id="sOB-70-Z9c"/>

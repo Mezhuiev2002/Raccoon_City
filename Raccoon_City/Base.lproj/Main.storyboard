@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ja7-0I-ZSl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ja7-0I-ZSl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,14 +13,14 @@
         <!--Main View Controller-->
         <scene sceneID="8d3-n6-M42">
             <objects>
-                <viewController storyboardIdentifier="MainViewController" id="qnl-5J-KrM" customClass="MainViewController" customModule="CollectionViewLesson" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="qnl-5J-KrM" customClass="MainViewController" customModule="Raccoon_City" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="saH-Fl-qu5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="q9K-Gv-IaH">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="0gJ-Gb-xrP">
                                     <size key="itemSize" width="148" height="131"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -28,14 +30,14 @@
                                 <cells/>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="NyM-HT-UyA"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="q9K-Gv-IaH" firstAttribute="top" secondItem="NyM-HT-UyA" secondAttribute="top" id="ABz-BG-Tba"/>
                             <constraint firstItem="q9K-Gv-IaH" firstAttribute="trailing" secondItem="NyM-HT-UyA" secondAttribute="trailing" id="JcQ-F5-j0u"/>
                             <constraint firstItem="q9K-Gv-IaH" firstAttribute="leading" secondItem="NyM-HT-UyA" secondAttribute="leading" id="nht-Qd-AaT"/>
                             <constraint firstItem="NyM-HT-UyA" firstAttribute="bottom" secondItem="q9K-Gv-IaH" secondAttribute="bottom" id="xaU-g5-WfI"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="NyM-HT-UyA"/>
                     </view>
                     <navigationItem key="navigationItem" id="9cK-7l-HFz"/>
                     <connections>
@@ -49,14 +51,14 @@
         <!--Menu View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MenuViewController" id="BYZ-38-t0r" customClass="MenuViewController" customModule="CollectionViewLesson" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuViewController" id="BYZ-38-t0r" customClass="MenuViewController" customModule="Raccoon_City" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ff9-OU-XUQ">
                                 <rect key="frame" x="0.0" y="44" width="414" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="FBn-jy-B0g"/>
                                 </constraints>
@@ -79,7 +81,7 @@
                             </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="azB-6B-Zgs">
                                 <rect key="frame" x="0.0" y="102" width="414" height="760"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Soy-Yq-fTW">
                                     <size key="itemSize" width="148" height="131"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -89,7 +91,8 @@
                                 <cells/>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ff9-OU-XUQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7Ll-Wc-CCK"/>
                             <constraint firstItem="azB-6B-Zgs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Igj-gV-QUs"/>
@@ -99,7 +102,6 @@
                             <constraint firstItem="ff9-OU-XUQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kll-8g-wT4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="azB-6B-Zgs" secondAttribute="bottom" id="m0A-ZM-WcF"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="azB-6B-Zgs" id="4UT-cj-Ryy"/>
@@ -113,14 +115,14 @@
         <!--Full Product View Controller-->
         <scene sceneID="6Jl-JU-9Uj">
             <objects>
-                <viewController storyboardIdentifier="FullProductViewController" id="NOt-T8-sZe" customClass="FullProductViewController" customModule="CollectionViewLesson" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FullProductViewController" id="NOt-T8-sZe" customClass="FullProductViewController" customModule="Raccoon_City" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HUD-ZJ-k8s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Xa9-DZ-i9N">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="8xH-DJ-vrB">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -139,14 +141,14 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="WMW-mQ-0aK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Xa9-DZ-i9N" firstAttribute="top" secondItem="WMW-mQ-0aK" secondAttribute="top" id="0z8-Xd-fGP"/>
                             <constraint firstItem="WMW-mQ-0aK" firstAttribute="bottom" secondItem="Xa9-DZ-i9N" secondAttribute="bottom" id="7SM-eA-bxS"/>
                             <constraint firstItem="Xa9-DZ-i9N" firstAttribute="leading" secondItem="WMW-mQ-0aK" secondAttribute="leading" id="C7h-iR-UHa"/>
                             <constraint firstItem="WMW-mQ-0aK" firstAttribute="trailing" secondItem="Xa9-DZ-i9N" secondAttribute="trailing" id="ssS-nj-3OP"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="WMW-mQ-0aK"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="Xa9-DZ-i9N" id="tYl-t0-Zw9"/>
@@ -175,4 +177,12 @@
             <point key="canvasLocation" x="-786.95652173913049" y="154.6875"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
