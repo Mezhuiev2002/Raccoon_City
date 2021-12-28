@@ -196,6 +196,14 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIg-5v-qRu">
+                                <rect key="frame" x="0.0" y="54" width="414" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Book this table"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="NOt-T8-sZe" eventType="touchUpInside" id="Iyd-k4-jvl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WMW-mQ-0aK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -203,6 +211,9 @@
                             <constraint firstItem="Xa9-DZ-i9N" firstAttribute="top" secondItem="WMW-mQ-0aK" secondAttribute="top" id="0z8-Xd-fGP"/>
                             <constraint firstItem="WMW-mQ-0aK" firstAttribute="bottom" secondItem="Xa9-DZ-i9N" secondAttribute="bottom" id="7SM-eA-bxS"/>
                             <constraint firstItem="Xa9-DZ-i9N" firstAttribute="leading" secondItem="WMW-mQ-0aK" secondAttribute="leading" id="C7h-iR-UHa"/>
+                            <constraint firstItem="WMW-mQ-0aK" firstAttribute="trailing" secondItem="OIg-5v-qRu" secondAttribute="trailing" id="GqY-bJ-uys"/>
+                            <constraint firstItem="OIg-5v-qRu" firstAttribute="leading" secondItem="WMW-mQ-0aK" secondAttribute="leading" id="Mqm-uL-wWj"/>
+                            <constraint firstItem="OIg-5v-qRu" firstAttribute="top" secondItem="WMW-mQ-0aK" secondAttribute="top" constant="10" id="UcF-Dn-2wc"/>
                             <constraint firstItem="WMW-mQ-0aK" firstAttribute="trailing" secondItem="Xa9-DZ-i9N" secondAttribute="trailing" id="ssS-nj-3OP"/>
                         </constraints>
                     </view>
