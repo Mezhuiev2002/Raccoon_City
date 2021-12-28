@@ -18,4 +18,6 @@ class FullProductCell: UICollectionViewCell {
            self.productPrice.text = "\(product.price)"
 
     }
+    
+    
 }

@@ -18,12 +18,25 @@ class FullProductViewController: UIViewController {
         
     }
     
+    @IBAction func tapButton(_ sender: UIButton) {
+        showAlert()
+    }
+    func showAlert() {
+        let alert = UIAlertController(title: "Wow!", message: "You booked this table", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Thanks", style: .cancel, handler: { action in
+            print(" ")
+        }))
+        
+        present(alert, animated: true)
+    }
 }
+
 
 extension FullProductViewController:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.products.count
     }
+    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FullProductCell", for: indexPath) as! FullProductCell
