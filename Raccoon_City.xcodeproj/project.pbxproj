@@ -26,6 +26,7 @@
 		956E9A2D2408DED4000C1F0E /* FullProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E9A2C2408DED4000C1F0E /* FullProductViewController.swift */; };
 		956E9A302408DF22000C1F0E /* FullProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E9A2E2408DF22000C1F0E /* FullProductCell.swift */; };
 		956E9A312408DF22000C1F0E /* FullProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 956E9A2F2408DF22000C1F0E /* FullProductCell.xib */; };
+		F9A5220C277B946100DB4EEB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5220B277B946100DB4EEB /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		956E9A2C2408DED4000C1F0E /* FullProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullProductViewController.swift; sourceTree = "<group>"; };
 		956E9A2E2408DF22000C1F0E /* FullProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullProductCell.swift; sourceTree = "<group>"; };
 		956E9A2F2408DF22000C1F0E /* FullProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullProductCell.xib; sourceTree = "<group>"; };
+		F9A5220B277B946100DB4EEB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				956E9A292408D93F000C1F0E /* ProductTableViewCell.xib */,
 				956E9A2E2408DF22000C1F0E /* FullProductCell.swift */,
 				956E9A2F2408DF22000C1F0E /* FullProductCell.xib */,
+				F9A5220B277B946100DB4EEB /* ProfileViewController.swift */,
 			);
 			path = MenuCells;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				95305C9A23F2EE1E0055B1D5 /* AppDelegate.swift in Sources */,
 				956E9A2A2408D93F000C1F0E /* ProductTableViewCell.swift in Sources */,
 				95305CB223F2F3300055B1D5 /* ProductCell.swift in Sources */,
+				F9A5220C277B946100DB4EEB /* ProfileViewController.swift in Sources */,
 				95305C9C23F2EE1E0055B1D5 /* SceneDelegate.swift in Sources */,
 				95305CC023F3D1D00055B1D5 /* GroupCell.swift in Sources */,
 				95305CAE23F2F2120055B1D5 /* MenuViewController.swift in Sources */,

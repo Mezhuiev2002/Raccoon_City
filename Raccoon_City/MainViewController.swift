@@ -12,8 +12,12 @@ class MainViewController: UIViewController {
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
     }
+    
 
-
+    @IBAction func profileButt(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "profile_vc") as! ProfileViewController
+        present(vc, animated: true)    }
+    
 }
 
 extension MainViewController:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
