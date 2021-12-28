@@ -16,7 +16,7 @@ class GroupCell: UICollectionViewCell {
     func setupCell(group:Group,isSelected:Bool){
         self.nameGroup.text = group.name
         if isSelected{
-            self.contentView.backgroundColor = .orange
+            self.contentView.backgroundColor = .clear
         }else{
             self.contentView.backgroundColor = .white
         }
